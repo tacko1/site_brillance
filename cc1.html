@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>BRILLANCE — Bijouterie</title>
+  <link rel="stylesheet" href="/site_brillance/cc1.css" />
+</head>
+
+<body>
+
+  <!-- ======================================
+       BARRE DE NAVIGATION (en haut a gauche)
+  ======================================== -->
+  <header>
+    <div class="logo">BRILLANCE</div>
+    <nav>
+      <a href="#collections">Collections</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- =====================
+       BANNIÈRE PRINCIPALE
+  ===================== -->
+  <section class="banniere">
+    <p class="sous-titre">Collection Printemps 2026</p>
+    <h1>L'Éclat du Précieux</h1>
+    <p class="description">Des pièces uniques forgées à la main, pour sublimer chaque moment.</p>
+    <a href="#collections" class="bouton">Découvrir la collection</a>
+  </section>
+
+  <!-- =====================
+       SECTION COLLECTIONS
+  ===================== -->
+  <section id="collections">
+
+    <div class="titre-section">
+      <span class="ligne"></span>
+      <h2>Nos Collections</h2>
+      <span class="ligne"></span>
+    </div>
+
+    <!-- Grille de produits -->
+    <div class="grille-produits">
+
+      <!-- Produit 1 -->
+      <article class="produit" onclick="ouvrirModal('Collier Étoile d\'Or', '1 250 000 FCFA', 'Collier en or 18 carats serti d\'un diamant taille brillant de 0,5 carat.', 'collier en or.jfif')">
+        <img src="/site_brillance/collier en or.jpeg" alt="Collier en or" />
+        <div class="produit-infos">
+          <h3>Collier Étoile d'Or</h3>
+          <p>1 250 000 FCFA</p>
+        </div>
+      </article>
+
+      <!-- Produit 2 -->
+      <article class="produit" onclick="ouvrirModal('Boucles Saphir', '2 800 000 FCFA', 'Solitaire classique en platine avec un saphir de 1 carat certifié GIA.', 'boucle saphir.jfif')">
+        <img src="boucle saphir.jpeg" alt="Boucles Saphir" />
+        <div class="produit-infos">
+          <h3>Boucles Saphir</h3>
+          <p>2 800 000 FCFA</p>
+        </div>
+      </article>
+
+      <!-- Produit 3 -->
+      <article class="produit" onclick="ouvrirModal('Boucles Perles Royales', '680 000 FCFA', 'Boucles d\'oreilles ornées de perles de culture du Japon, montées sur or blanc 18 carats.', 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500')">
+        <img src="/site_brillance/produit3.jpeg" alt="Boucles d'oreilles" />
+        <div class="produit-infos">
+          <h3>Boucles Perles Royales</h3>
+          <p>680 000 FCFA</p>
+        </div>
+      </article>
+
+      <!-- Produit 4 -->
+      <article class="produit" onclick="ouvrirModal('Bracelet Jonc Impérial', '920 000 FCFA', 'Bracelet jonc en or jaune 18 carats, gravé à la main de motifs floraux.', 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500')">
+        <img src="/site_brillance/produit4.jpeg" alt="Bracelet jonc" />
+        <div class="produit-infos">
+          <h3>Bracelet Jonc Impérial</h3>
+          <p>920 000 FCFA</p>
+        </div>
+      </article>
+
+      <!-- Produit 5 -->
+      <article class="produit" onclick="ouvrirModal('Collier Rubis de Birmanie', '3 400 000 FCFA', 'Collier en or rose 18 carats serti de rubis naturels de Birmanie et de diamants pavés.', 'https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?w=500')">
+        <img src="/site_brillance/produit5.jpeg" alt="Collier rubis" />
+        <div class="produit-infos">
+          <h3>Collier Rubis de Birmanie</h3>
+          <p>3 400 000 FCFA</p>
+        </div>
+      </article>
+
+      <!-- Produit 6 -->
+      <article class="produit" onclick="ouvrirModal('Montre Lumière Dorée', '4 100 000 FCFA', 'Montre-bijou en or 18 carats avec cadran serti de 48 diamants.', 'https://images.unsplash.com/photo-1603561596112-0a132b757442?w=500')">
+        <img src="/site_brillance/produit6.jpeg" alt="Montre bijou" />
+        <div class="produit-infos">
+          <h3>Montre Lumière Dorée</h3>
+          <p>4 100 000 FCFA</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       SECTION A PROPOS
+  ===================== -->
+  <section class="apropos" id="apropos">
+
+    <div class="titre-section">
+      <span class="ligne"></span>
+      <h2>Notre Savoir-Faire</h2>
+      <span class="ligne"></span>
+    </div>
+
+    <div class="apropos-grille">
+
+      <div class="carte-apropos">
+        <div class="icone">✦</div>
+        <h3>Matériaux Certifiés</h3>
+        <p>Chaque gemme est certifiée par les plus grands laboratoires gemmologiques internationaux.</p>
+      </div>
+
+      <div class="carte-apropos">
+        <div class="icone">✦</div>
+        <h3>Artisanat d'Exception</h3>
+        <p>Nos orfèvres façonnent chaque pièce à la main, avec un soin et une précision inégalés.</p>
+      </div>
+
+      <div class="carte-apropos">
+        <div class="icone">✦</div>
+        <h3>Livraison Sécurisée</h3>
+        <p>Vos bijoux sont livrés dans un écrin de luxe, assurés et sécurisés à chaque étape.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       PIED DE PAGE
+  ===================== -->
+  <footer id="contact">
+    <div class="logo-footer">BRILLANCE</div>
+    <p class="slogan">L'art du bijou depuis 1985</p>
+    <div class="liens">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">contact@brillance-bijoux.sn</a>
+    </div>
+    <p class="copyright">© 2026 BRILLANCE Bijouterie. Tous droits réservés.</p>
+  </footer>
+
+  <!-- =====================
+       FENÊTRE MODALE
+  ===================== -->
+  <div class="modal" id="modal">
+    <div class="modal-contenu">
+
+      <!-- Bouton pour fermer -->
+      <button class="bouton-fermer" onclick="fermerModal()">✕</button>
+
+      <!-- Image du produit -->
+      <img id="modal-image" src="" alt="" />
+
+      <!-- Informations du produit -->
+      <div class="modal-infos">
+        <h2 id="modal-nom"></h2>
+        <p class="prix" id="modal-prix"></p>
+        <p id="modal-desc"></p>
+        <button class="bouton">Ajouter au panier</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lien js -->
+  <script src="/site_brillance/cc1.js"></script>
+
+</body>
+</html>

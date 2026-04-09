@@ -1,0 +1,330 @@
+/* =====================
+   1. RÉINITIALISATION
+   On supprime les marges et espacements par défaut
+   du navigateur pour partir d'une base propre.
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Lato', sans-serif; /* police générale de la page */
+  color: #333;                     /* couleur du texte : gris foncé */
+  background: #fff;                /* fond blanc */
+}
+
+
+/* =====================
+   2. BARRE DE NAVIGATION
+===================== */
+header {
+  display: flex;                   /* place les éléments côte à côte */
+  justify-content: space-between;  /* logo à gauche, nav à droite */
+  align-items: center;             /* pour centrage vertical */
+  padding: 20px 40px;              /* espacement intérieur */
+  background: #fff;
+  border-bottom: 1px solid #eee;  /* ligne grise en bas du header */
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  letter-spacing: 4px; /* espacement entre les lettres */
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none; /* supprime le soulignement des liens */
+  color: #333;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #b8973a; /* couleur dorée quand on passe la souris */
+}
+
+
+/* =====================
+   3. BANNIÈRE PRINCIPALE
+===================== */
+.banniere {
+  text-align: center;
+  padding: 80px 20px;
+  background: #faf8f4; /* fond légèrement beige */
+}
+
+.banniere .sous-titre {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #b8973a;
+  text-transform: uppercase; /* texte en majuscules */
+  margin-bottom: 16px;
+}
+
+.banniere h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 300; /* texte fin */
+  margin-bottom: 20px;
+}
+
+.banniere .description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+/* =====================
+   4. BOUTON RÉUTILISABLE
+   La classe .bouton s'applique à plusieurs boutons
+   sur la page pour qu'ils aient le même style.
+===================== */
+.bouton {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #1a1a1a;       /* fond noir */
+  color: #fff;               /* texte blanc */
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.bouton:hover {
+  background: #b8973a; /* fond doré au survol */
+}
+
+
+/* =====================
+   5. TITRE DE SECTION
+   Utilisé avant chaque section pour afficher
+   un titre centré avec des lignes de chaque côté.
+===================== */
+.titre-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;              /* espace entre les éléments */
+  margin: 60px 0 40px;
+}
+
+.titre-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* Les deux lignes horizontales de chaque côté du titre */
+.ligne {
+  flex: 1;           /* prend l'espace disponible */
+  max-width: 100px;
+  height: 1px;
+  background: #ccc;
+}
+
+
+/* =====================
+   6. GRILLE DE PRODUITS
+===================== */
+.grille-produits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+  gap: 30px;                             /* espace entre les cartes */
+  padding: 0 40px 60px;
+}
+
+/* Une carte produit */
+.produit {
+  cursor: pointer;         /* curseur "main" pour indiquer que c'est cliquable */
+  border: 1px solid #eee;
+  transition: transform 0.3s; /* animation douce lors du survol */
+}
+
+.produit:hover {
+  transform: translateY(-5px); /* la carte remonte légèrement au survol */
+}
+
+.produit img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover; /* l'image remplit le cadre sans se déformer */
+  display: block;
+}
+
+.produit-infos {
+  padding: 16px;
+  text-align: center;
+}
+
+.produit-infos h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.produit-infos p {
+  color: #b8973a; /* prix affiché en doré */
+  font-size: 14px;
+}
+
+
+/* =====================
+   7. SECTION À PROPOS
+===================== */
+.apropos {
+  background: #faf8f4;
+  padding: 60px 40px;
+}
+
+.apropos-grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.carte-apropos {
+  text-align: center;
+  padding: 30px;
+}
+
+.carte-apropos .icone {
+  font-size: 24px;
+  color: #b8973a;
+  margin-bottom: 16px;
+}
+
+.carte-apropos h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.carte-apropos p {
+  color: #666;
+  line-height: 1.7; /* espacement entre les lignes de texte */
+  font-size: 14px;
+}
+
+
+/* =====================
+   8. PIED DE PAGE
+===================== */
+footer {
+  background: #1a1a1a; /* fond noir */
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.logo-footer {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  color: #b8973a;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.liens a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 13px;
+}
+
+.liens a:hover {
+  color: #fff;
+}
+
+.copyright {
+  color: #555;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+
+/* =====================
+   9. FENÊTRE MODALE
+   La modale est une fenêtre qui s'affiche par-dessus
+   la page quand on clique sur un produit.
+===================== */
+
+/* L'arrière-plan sombre derrière la modale */
+.modal {
+  display: none;       /* cachée par défaut */
+  position: fixed;     /* reste en place même si on fait défiler */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* noir semi-transparent */
+  z-index: 1000;                   /* passe au-dessus de tout */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quand JavaScript ajoute la classe "active", la modale s'affiche */
+.modal.active {
+  display: flex;
+}
+
+/* La boîte blanche au centre */
+.modal-contenu {
+  background: #fff;
+  display: flex;
+  max-width: 800px;
+  width: 90%;
+  position: relative; /* nécessaire pour positionner le bouton ✕ */
+}
+
+.modal-contenu img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.modal-infos {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; /* empile les éléments verticalement */
+  justify-content: center;
+  gap: 16px;
+}
+
+.modal-infos h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+}
+
+.modal-infos .prix {
+  color: #b8973a;
+  font-size: 18px;
+}
+
+.modal-infos p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* Bouton ✕ pour fermer la modale */
+.bouton-fermer {
+  position: absolute; /* positionné par rapport à .modal-contenu */
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
